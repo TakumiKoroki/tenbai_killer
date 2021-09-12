@@ -11,6 +11,13 @@
 |
 */
 
+use App\Http\Controllers\BuyerController;
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/buyers', 'BuyerController@index');
+
+
